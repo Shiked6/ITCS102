@@ -1,0 +1,1 @@
+# Objective: Develop a comprehensive text-based program in Python that serves as an interactive menu allowing users to navigate through multiple topics covering fundamental concepts such as print statements, variables, operators, conditionals, loops, lists, and functions. The program should provide a structured environment for learning and experimenting with Python fundamentals.
