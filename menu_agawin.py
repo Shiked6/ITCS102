@@ -216,25 +216,174 @@ def act21():
   print(f"Compilation of All, Like This Code")
 
 def code1():
+  print ("By : Joshua Ezekiel A. Agawin \nFrom BSIT-1C\nDate Created : 08/28/2024")
+  print("""
+  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
+  \t\t\t\t\t\t\t\t\t\t\t\t\t*
+  \t\t\t\t\t\t\t\t\t\t\t\t*\t*\t*
+  \t\t\t\t\t\t\t\t\t\t\t*\t*\t*\t*\t*
+  \t\t\t\t\t\t\t\t\t\t*\t*\t*\t*\t*\t*\t*
+  \t\t\t\t\t\t\t\t\t\t\t*\t*\t*\t*\t*
+  \t\t\t\t\t\t\t\t\t\t\t\t*\t*\t*
+  \t\t\t\t\t\t\t\t\t\t\t\t\t*
+  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
+  """)
+
 def code2():
+  print("By : Joshua Ezekiel A. Agawin\nFrom BSIT-1C\nDate Created : 08/30/2024")
+  Name = input("Please enter a name ---> ")
+  print("Hi", Name)
+  
+  print("""
+  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
+  \t\t\t\t\t\t\t\t\t\t\t\t\t*
+  \t\t\t\t\t\t\t\t\t\t\t\t*\t*\t*
+  \t\t\t\t\t\t\t\t\t\t\t*\t*\t*\t*\t*
+  \t\t\t\t\t\t\t\t\t\t\t\t-----------------
+  \t\t\t\t\t\t\t\t\t\t*\t\t|""","Hi!", Name,"""\t|\t\t*
+  \t\t\t\t\t\t\t\t\t\t\t\t-----------------
+  \t\t\t\t\t\t\t\t\t\t\t*\t*\t*\t*\t*
+  \t\t\t\t\t\t\t\t\t\t\t\t*\t*\t*
+  \t\t\t\t\t\t\t\t\t\t\t\t\t*
+  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
+  """)
+  
 def code3():
 def code4():
+  num1 = int(input('First number : '))
+  num2 = int(input('Second Number : '))
+  sum = num1 + num2
+  dif = num1 - num2
+  pro = num1 * num2
+  quo = num1 // num2
+  exp = num1 ** num2
+  rem = num1 % num2
+  flo = num1 / num2
+  print("\nThe Sum of", num1, "and", num2, "is",sum)
+  print("The Difference of", num1, "and", num2, "is",dif)
+  print("The Product of", num1, "and", num2, "is",pro)
+  print("The Quotient of", num1, "and", num2, "is",quo)
+  print("The Exponent of", num1, "by", num2, "is",exp)
+  print("The Reminder of", num1, "and", num2, "is",rem)
+  print("The Floor Division of", num1, "and", num2, "is",flo)
+  print("\n Created By : Joshua Ezekiel A. Agawin \n Course and Section : BSIT_1C\n Date Created : 09/06/2024 (Friday) \nDate Submitted : \n Thank you!")
+
 def code5():
 def code6():
+  print("Final Grade Computer")
+  pre = eval(input("Enter your Prelim Grade ---> "))
+  mid = eval(input("Enter your Midterm Grade ---> "))
+  sem =  eval(input("Enter your Semi-Final Grade ---> "))
+  fin = eval(input("Enter your Final Grade ---> "))
+  qui = eval(input("Enter your Quiz Grade ---> "))
+  pro = eval(input("Enter your Project Grade---> "))
+  
+  fg = (pre * 0.15) + (mid * 0.15) + (sem * 0.15) +(fin * 0.15) +(qui * 0.25) +(pre * 0.15)
+  
+  if fg >= 75 :
+  	print("You Passed the course with your final grade being", fg)
+  else :
+  	print("Sorry, You Failed with the final grade of", fg)
+    
 def code7():
 def code8():
+  #Fetch 10 random numbers from the users. After acquiring all the numbers, get the summation at all the provided numbers
+  # print("Summation of 10 Random Numbers\n")
+  # x = 0
+  # for z in range (1,11) :
+  #     add = eval(input(f"Input #{z} = "))
+  #     x += add
+  
+  # print(f"\nThe Summation of the 10 random numbers is : {x}")
+  
+  # print("\nBy Joshua Ezekiel A. Agawin\nFrom BSIT-1C\nCreated on : 10-14-2024(Monday)\nThank you!\n")
+  
+  print("Summation of 10 Random Numbers\n")
+  x = 0
+  odd = 0
+  even = 0
+  for z in range (1,11) :
+      add = eval(input(f"Input #{z} = "))
+      x += add
+      if add % 2 == 0:
+          even += add
+      else:
+          odd += add
+  
+  print(f"""\nThe Summation of the 10 random numbers is : {x}
+  The summation of the even numbers is : {even}
+  The summation of the odd numbers is : {odd}
+  """)
+  
 def code9():
-  for x in range(10,0,-1):
-      print("",end="")
-      for y in range(10,x,-1):
-          print("*" * x)
+  for x in range(1,6):
+    for y in range(1,x+1):
+        print(" ",end=" ")
+    for z in range(6,x,-1):
+        print("*",end=" ")
+    print()
+    
 def code10():
+  for x in range(1,6):
+      for y in range(1,6):
+          print("*",end="")
+      print()         
+      
 def code11():
+  for x in range(1,5):
+      #decrement
+      for y in range(4,x,-1):
+          print(" ",end=" ")
+      #increment
+      for z in range(1,x+1):
+          print("*",end=" ")
+      for a in range(1,x+1):
+          print("*",end=" ") 
+      print()
+    
 def code12():
+  for x in range(1,5):
+      #decrement
+      for y in range(4,x,-1):
+          print(" ",end=" ")
+      #increment
+      for z in range(1,x+1):
+          print("*",end=" ")
+      for a in range(1,x+1):
+          print("*",end=" ") 
+      print()
+  for gap in range(1,5):
+      for space in range(0,6):
+          print(" ",end="")
+      for middle in range(0,2):
+          print("*",end=" ")
+      print()
+  
+  print(f"""
+  By Joshua Ezekiel A. Agawin
+  From BSIT-1C
+  Made on 10-30-2024(Wednesday)
+  Thank you!
+  """)
+  
 def code13():
 def code14():
 def code15():
 def code16():
+  number1 = 10
+  number2 = 10
+  
+  def sum_no(number1,number2):
+      return number1 + number2
+  
+  print(sum_no(number1,number2))
+  
+  print("""
+  By Joshua Ezekiel A. Agawin
+  From BSIT-1C
+  Date Created : 11/15/2024(Friday)
+  Thank you!
+  """)
 
 
 
