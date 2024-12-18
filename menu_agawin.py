@@ -335,8 +335,8 @@ def activity19():
     tama_act19 = True
 
     while tama_act19 == True:
-        ask_act19 = input("Enter your name: ")
-        if ask_act19.lower() == "stop":
+        ask_act19 = input("Enter your name (type 'stop' to stop) : ")
+        if ask_act19.lower() == "stop": 
             break
             ask_act19 == False
 
@@ -907,7 +907,7 @@ def code_challange14():
     no = 0
 
     while isLoop == True:
-        josh = eval(input("Enter a number> "))
+        josh = eval(input(f"Enter a number [type 0 to stop ]= "))
         if josh > 0:
             no+= josh
             continue
